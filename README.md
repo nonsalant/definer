@@ -73,8 +73,8 @@ Note: the `base` parameter never affects URL's that start with `http://` or `htt
 - `.js` extensions are optional in the `load` parameter
 - Whitespace (for readability) is allowed anywhere in the parameter values, but not between the `?` sign and the first `=` or the `&` sign and the next `=`
 
-## About the components
-1. Components should export their classes, and their class names should be PascalCase versions of the tag names (e.g. `MyComponent` for the tag `my-component`)
+## About the web component files which are loaded
+1. Components should export their classes, and their class names should be PascalCase versions of the tag names (e.g. `MyComponent` for the tag `my-component`); see the `.js` files in the demo folder for examples.
 2. There's no need to do this anymore:
 ```javascript
 customElements.define('my-component', MyComponent)
