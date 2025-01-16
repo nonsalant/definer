@@ -56,3 +56,7 @@ a {
 hr {
     opacity: 0.25;
 }
+
+h2, footer {
+    font-family: system-ui;
+}
