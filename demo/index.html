@@ -6,12 +6,19 @@
     <title>Definer of Web Components</title>
     <style>
         html { color-scheme: light dark; }
-        body { 
+        body {
+            background-color: light-dark(#FDFFEA, #111);
             max-width: min(60rem, 100%); min-height: 80dvh;
             margin: 0 auto; padding: 1lh;
-            align-content: center; justify-items: center; 
+            align-content: center; justify-items: center;
         }
         .wrapper > * + * { margin-top: 1lh; }
+        a {
+            color: inherit; font-weight: bold;
+            &:hover { opacity: 0.8; }
+        }
+        hr { opacity: 0.25; }
+        h2, footer { font-family: system-ui; }
     </style>
     <link rel="stylesheet" href="checkered-bg.css">
 

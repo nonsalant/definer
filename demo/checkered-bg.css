@@ -37,26 +37,3 @@ html:before {
             linear-gradient(0deg, transparent 80%, white);
     }
 }
-
-body {
-    background-color: light-dark(#FDFFEA, #101821);
-    background-color: light-dark(#FDFFEA, #111);
-}
-
-a {
-    color: inherit;
-    font-weight: bold;
-    /* text-decoration: none; */
-    &:hover {
-        text-decoration: underline;
-        opacity: 0.8;
-    }
-}
-
-hr {
-    opacity: 0.25;
-}
-
-h2, footer {
-    font-family: system-ui;
-}
