@@ -1,5 +1,5 @@
 # definer
- One file responsible for defining all web components (you load them using query strings)
+<i>One file responsible for defining all web components (you load them using query strings)</i>
 
 ## Usage Examples
 
@@ -52,12 +52,12 @@
 ```
 
 ### 5. External and local combined + base parameter
-Note: the `base` parameter never affects URL's that start with `http` or `https`
+Note: the `base` parameter never affects URL's that start with `http://` or `https://`
 ```html
 <script type="module" src="../definer.js?load=
         my-component,
         https://web-component-definer.netlify.app/my-other-component,
-        other-component|renamed-component,
+        my-other-component|renamed-component,
     &base=scripts/components
 "></script>
 ```
@@ -68,9 +68,9 @@ Note: the `base` parameter never affects URL's that start with `http` or `https`
 ```
 
 ## Notes
-- Trailing commas are allowed in the `load` parameter.
-- Trailing slashes are allowed in the `base` parameter.
-- `.js` extensions are optional in the `load` parameter.
+- Trailing commas are allowed in the `load` parameter
+- Trailing slashes are allowed in the `base` parameter
+- `.js` extensions are optional in the `load` parameter
 - Whitespace (for readability) is allowed anywhere in the parameter values, but not between the `?` sign and the first `=` or the `&` sign and the next `=`
 
 ## About the components
@@ -79,7 +79,7 @@ Note: the `base` parameter never affects URL's that start with `http` or `https`
 ```javascript
 customElements.define('my-component', MyComponent)
 ```
-…unless you want to, in which case you’ll need to add this parameter to add `|false` to the corresponding tag in the `load` parameter, e.g:
+…unless you want to, in which case you’ll need to add `|false` to the corresponding tag in the `load` parameter, e.g:
 ```html
 <script type="module" src="../definer.js?load=my-component|false"></script>
 ```
