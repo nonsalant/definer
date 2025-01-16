@@ -1,6 +1,8 @@
 # definer
 <i>One file responsible for defining all web components (you load them using query strings)</i>
 
+Live Demo: https://definer.netlify.app/demo
+
 ## Usage Examples
 
 ### 1. Components from a local folder
