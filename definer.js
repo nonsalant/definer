@@ -3,6 +3,7 @@ const items = cleanItems(load.split(','));
 
 items.forEach((item) => {
     const itemParts = item.split('|');
+    const className = itemParts[2];
     const definedName = itemParts[1];
     let modulePath = itemParts[0];
     modulePath = addBasePath(modulePath);
@@ -12,7 +13,7 @@ items.forEach((item) => {
 
     import(modulePath).then((module) => {
         // Dynamically access the class by its name
-        const webComponentClassName = toPascalCase(filename);
+        const webComponentClassName = className || toPascalCase(filename);
         class WebComponent extends module[webComponentClassName] {
             // Modified from: https://til.jakelazaroff.com/html/define-a-custom-element/
             static tag = filename;
