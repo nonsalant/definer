@@ -39,8 +39,8 @@ Note: `.js` extensions are optional after the filenames.
 ### 3. Components from external URL's
 ```html
 <script type="module" src="../definer.js?load=
-        https://web-component-definer.netlify.app/my-component.js,
-        https://web-component-definer.netlify.app/my-other-component.js,
+    https://web-component-definer.netlify.app/my-component.js,
+    https://web-component-definer.netlify.app/my-other-component.js,
 "></script>
 ```
 ```html
@@ -51,9 +51,9 @@ Note: `.js` extensions are optional after the filenames.
 ### 4. From external URL's with renamed tags and a `base` parameter
 ```html
 <script type="module" src="../definer.js?load=
-        my-component.js|external-component,
-        my-other-component.js|other-external-component,
-    &base=https://web-component-definer.netlify.app
+    my-component.js|external-component,
+    my-other-component.js|other-external-component,
+&base=https://web-component-definer.netlify.app
 "></script>
 ```
 ```html
@@ -65,10 +65,10 @@ Note: `.js` extensions are optional after the filenames.
 Note: the `base` parameter never affects URL's that start with `http://` or `https://`
 ```html
 <script type="module" src="../definer.js?load=
-        my-component.js,
-        https://web-component-definer.netlify.app/my-other-component.js,
-        my-other-component.js|renamed-component,
-    &base=scripts/components
+    my-component.js,
+    https://web-component-definer.netlify.app/my-other-component.js,
+    my-other-component.js|renamed-component,
+&base=scripts/components
 "></script>
 ```
 ```html
