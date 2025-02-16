@@ -1,5 +1,5 @@
 # definer
-<i>One file responsible for defining all web components (you load them using query strings)</i>
+<i>Load and (re)define multiple web components from a single script using URL query parameters.</i>
 
 ## Demos
 - Live Test: https://definer.netlify.app/demo/
