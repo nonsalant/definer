@@ -7,7 +7,6 @@ items.forEach((item) => {
     const definedName = itemParts[1];
     let modulePath = itemParts[0];
     modulePath = addBasePath(modulePath);
-    modulePath = addJsExtension(modulePath);
     modulePath = processPath(modulePath);
     const filename = extractFilename(modulePath);
 
@@ -89,8 +88,4 @@ function toPascalCase(str) {
 function extractFilename(filePath) {
     const withExtension = filePath.split('/').pop();
     return withExtension.replace('.js', '');
-}
-
-function addJsExtension(str) {
-    return str.endsWith('.js') ? str : `${str}.js`;
 }
