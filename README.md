@@ -12,7 +12,7 @@ In the pen above multiple web components are being imported as modules from the 
 ### 1. Components from a local folder
 
 ```html
-<script type="module" src="../definer.js?load=my-component,my-other-component">
+<script type="module" src="../definer.js?load=my-component.js,my-other-component.js">
 </script>
 ```
 
@@ -22,8 +22,6 @@ In the pen above multiple web components are being imported as modules from the 
 ```
 
 ### 2. With renamed tags
-
-Note: `.js` extensions are optional after the filenames.
 
 ```html
 <script type="module" src="../definer.js?load=
@@ -105,10 +103,9 @@ customElements.define('my-component', MyComponent)
 
 
 ## Notes
-- Trailing commas are allowed in the `load` parameter
-- Trailing slashes are allowed in the `base` parameter
-- `.js` extensions are optional in the `load` parameter
-- Whitespace (for readability) is allowed anywhere in the parameter values, but not between the `?` sign and the first `=` or the `&` sign and the next `=`
+- Trailing commas are allowed in the `load` parameter.
+- Trailing slashes are allowed in the `base` parameter.
+- Whitespace (for readability) is allowed anywhere in the parameter values, but not between the `?` sign and the first `=` or the `&` sign and the next `=`.
 
 ## Credits
 The `WebComponent` class is based on code from [this post](https://til.jakelazaroff.com/html/define-a-custom-element/) by Jake Lazaroff, which is in turn based on code from [this post](https://mayank.co/blog/defining-custom-elements/) by Mayank and [an idea](https://knowler.dev/blog/to-define-custom-elements-or-not-when-distributing-them) about using `import.meta.url` and search params from Nathan Knowler.
